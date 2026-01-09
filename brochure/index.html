@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="The DevMarq" />
+  <meta name="description" content="Explore The DevMarq brochure — a creative & digital growth support agency helping brands and individuals with design, marketing, and tech solutions." />
+  <meta name="keywords" content="The DevMarq, digital marketing, creative agency, social media, brochure, branding, website development" />
+  <title>The DevMarq Brochure</title>
+  <style>
+    body {
+      margin: 0;
+      background: #333;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    h1 {
+      margin: 20px;
+      font-size: 24px;
+      background: #1a1a1a; 
+      color: #fff; 
+      padding: 10px 20px; 
+      border-radius: 20px; 
+      border: ridge 2px #fff; 
+    }
+
+    @media (min-width: 480px) {
+      h1 { font-size: 24px; }
+    }
+
+    @media (min-width: 1024px) {
+      h1 { font-size: 32px; }
+    }
+
+    .pdf-container {
+      position: relative;
+      width: 100vw;
+      max-width: 1200px;
+      height: 80vh;   /* fills most of screen */
+    }
+
+    embed {
+      width: 100%;
+      height: 100%;
+      border: none;
+      filter: blur(8px);           /* blur the PDF */
+      pointer-events: none;        /* prevent interaction */
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 104%;
+      height: 104%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0,0,0,0.5); /* dark overlay */
+    }
+
+    .overlay button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      background: #ECD868;
+      color: #1a1a1a;
+      transition: background 0.3s;
+    }
+
+    .overlay button:hover {
+      background: #fff;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>📄 The <span style="color:#ECD868;">DevMarq</span> Brochure</h1>
+
+  <div class="pdf-container">
+    <embed 
+    src="https://cdn.jsdelivr.net/gh/TheDevMarq/The-DevMarq-Brochure@main/THE_DEVMARQ_BROCHURE.pdf#view=FitH" 
+    type="application/pdf">
+    <div class="overlay">
+      <button onclick="openPDF()">Open PDF Full Page</button>
+    </div>
+  </div>
+
+  <script>
+    function openPDF() {
+      window.open('https://cdn.jsdelivr.net/gh/TheDevMarq/The-DevMarq-Brochure@main/THE_DEVMARQ_BROCHURE.pdf', '_blank'); // opens full-page / native viewer
+    }
+  </script>
+
+</body>
+</html>
