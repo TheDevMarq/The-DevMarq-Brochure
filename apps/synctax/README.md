@@ -4,7 +4,7 @@ This folder contains the public legal pages for SyncTax.
 
 Recommended public URLs:
 
-- `https://www.thedevmarq.com/apps/synctax/`
+- `https://www.thedevmarq.com/apps/synctax.html`
 - `https://www.thedevmarq.com/apps/synctax/privacy-policy.html`
 - `https://www.thedevmarq.com/apps/synctax/terms-of-service.html`
 - `https://www.thedevmarq.com/apps/synctax/data-deletion.html`
